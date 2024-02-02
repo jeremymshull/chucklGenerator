@@ -1,0 +1,44 @@
+<!-- views/index.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChucklGenerator: Chuck Norris Edition</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body class="retro-bg">
+
+  <div class="container text-center mt-5 retro-text">
+    <div class="retro-section">
+      <img src="/Images/icons8-chuck-norris-100.png" alt="picture of Chuck Norris" class="img-fluid">
+      <!-- <a target="_blank" href="https://icons8.com/icon/B66tBXIKOwR9/chuck-norris">Chuck Norris</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
+      <h1 class="display-5 text-danger">Chuckl Generator: Chuck Norris Edition</h1>
+    </div>
+
+    <!-- Display joke -->
+    <div id="jokeContainer" class="retro-section bg-dark text-light p-4 rounded mt-4">
+      <!-- Joke will be displayed here -->
+      <%= joke %> <!-- Display the joke value passed from the server -->
+    </div>
+
+    <!-- Button to get the joke -->
+    <div id="jokeForm" class="retro-section mt-4">
+      <form>
+        <button type="submit" class="btn btn-danger btn-lg retro-btn">Get Joke</button>
+      </form>
+    </div>
+  </div>
+  
+  <footer class="copyright">
+    <p class="text-center fixed-bottom">© 2024 Jeremy Shull</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
